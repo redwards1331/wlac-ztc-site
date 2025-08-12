@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WLAC ZTC Course Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="wlac_logo.png" alt="WLAC logo" class="logo">
+    <h1>West Los Angeles College — Zero Textbook Cost (ZTC) Courses</h1>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <input id="search" placeholder="Search by course title or description" />
+      <select id="department"><option value="">All Departments</option></select>
+      <select id="term"><option value="">All Terms</option></select>
+      <button id="refresh">Refresh</button>
+    </div>
+
+    <section id="results" class="results"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Hosted on GitHub Pages · Data file: <code>ztc_live.csv</code></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
